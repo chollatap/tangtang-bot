@@ -1,8 +1,8 @@
  <?php
-  
+
 
 function send_LINE($msg){
- $access_token = 'qLip9omRdSnsaKFlsWmCCx9pdvAcRd1CGb6XfH/K3aKVgmHS4Eh/a35I8S1q8XVCZQVJUVIPa2B/c1ZJHfEyA8vUgqlUeIfqTkw607IKQ7yCasUHW34wj+CGzB6bOafYNDSGkh87GIr+Tns7fqFqVAdB04t89/1O/w1cDnyilFU='; 
+ $access_token = 'XIGfeOi56hMqF/zd60jKU5wT6b8ADXtLGV6ulG9V5LOJbkk026aK48Ue2kmozKABc86eBm8pucaoN1FJBiZC11fnzHSK83kspjFmar8dwu1YbRbb4SyZ9LZDnumcTmUuJnQ1fqlkgsEM6O+5MqoAAwdB04t89/1O/w1cDnyilFU=';
 
   $messages = [
         'type' => 'text',
@@ -14,7 +14,7 @@ function send_LINE($msg){
       $url = 'https://api.line.me/v2/bot/message/push';
       $data = [
 
-        'to' => 'Ue77a191627f6ac91899e75d92264310c',
+        'to' => 'chollatap',
         'messages' => [$messages],
       ];
       $post = json_encode($data);
@@ -29,7 +29,7 @@ function send_LINE($msg){
       $result = curl_exec($ch);
       curl_close($ch);
 
-      echo $result . "\r\n"; 
+      echo $result . "\r\n";
 }
 
 ?>
