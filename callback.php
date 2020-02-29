@@ -4,7 +4,7 @@ $access_token = 'XIGfeOi56hMqF/zd60jKU5wT6b8ADXtLGV6ulG9V5LOJbkk026aK48Ue2kmozKA
 // Get POST body content
 
 
-$url = 'https://api.line.me/v1/oauth/verify';
+$url = 'https://api.line.me/v2/bot/message/push';
 
 $headers = array('Authorization: Bearer ' . $access_token);
 
