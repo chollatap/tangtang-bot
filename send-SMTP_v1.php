@@ -19,7 +19,7 @@
         $mail->From = "s.chollathep@totisp.net"; // "name@yourdomain.com";
         //$mail->AddReplyTo = "support@thaicreate.com"; // Reply
         $mail->FromName = "chollathep srinuan";  // set from Name
-        $mail->Subject = "Test sending mail."; 
+        $mail->Subject = "Test2 sending mail."; 
         $mail->Body = "My Body & <b>My Description</b>";
 
         $mail->AddAddress("chollathep.s@tot.co.th", "chollathep srinuan"); // to Address
